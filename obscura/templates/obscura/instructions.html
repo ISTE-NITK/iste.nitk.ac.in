@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Concert+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+    <meta charset="utf-8">
+    <title>Mini Games</title>
+    <style>
+    body{
+        background-color:black;
+        font-family: 'Concert One', cursive;
+    }
+    h2{
+      font-size:90px;
+      color:yellow;
+    }
+    li{
+      color:white;
+      font-size:30px;
+    }
+
+      .myButton {
+      	box-shadow: 3px 4px 0px 0px #ffcc00;
+      	background-color:#fff200;
+      	border-radius:5px;
+      	border:1px solid #337bc4;
+      	display:inline-block;
+      	cursor:pointer;
+      	color:#0f0f0a;
+        font-family: 'Concert One', cursive;
+      	font-size:30px;
+      	font-weight:bold;
+      	padding:12px 44px;
+      	text-decoration:none;
+      	text-shadow:0px 1px 0px #528ecc;
+      }
+      .myButton:hover {
+      	background-color:#f7ff03;
+      }
+      .myButton:active {
+      	position:relative;
+      	top:1px;
+      }
+
+
+    </style>
+  </head>
+  <body>
+    <center>
+      <div>
+        {% if messages %}
+          <ul class="messages">
+            {% for message in messages %}
+              <center><li {% if message.tags %} class="{{ message.tags }}"{% endif %}><h3>{{ message }}</h3></li></center>
+            {% endfor %}
+          </ul>
+        {% endif %}
+      </div><br>
+    <center><h2>INSTRUCTIONS</h2></center>
+    <br>
+    <ul>
+	    <li>There are 21 questions to be answered- 7 easy, 7 medium and 7 hard.</li>
+      <li>The main goal is to do this within the least time with maximum points and hearts left at the end of it.</li>
+      <li>You start off with 25 points and 3 hearts.</li>
+      <li>You earn points by answering questions. Easy ones give you 25 points, medium ones give you 40 points and hard questions give you 60 points.</li>
+      <li>DO NOT use capital letters to answer!</li>
+      <li>But everything comes with a cost! So everytime you submit a wrong solution, you lose 1 heart.</li>
+      <li>Fret not, for you can earn hearts by playing any of the minigames. You get 1 heart everytime you play a minigame. But you need to pay 10 points everytime you do so.</li>
+     <li>Initially only easy questions are unlocked. You may unlock the medium questions by answering all easy questions correctly, and similarly you answer medium questions to unlock hard questions.</li>
+      <li>Hearts can also be used to unlock medium questions(10 hearts deducted) and hard questions(15 hearts deducted).</li>
+      <li>If you run out of both hearts and points, don't worry! Resources will be replenished for everyone at 10 PM on Saturday.</li>
+      <li>'Nuff said! Get started then!</li>
+    </ul>
+    <a href="{% url 'obs' team=team %}"><button class="myButton">Go to Home</button></a></center>
+
+  </body>
+</html>

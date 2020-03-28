@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Concert+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+    <meta charset="utf-8">
+    <title>Mini Games</title>
+    <style>
+    body{
+        background-color:black;
+        font-family: 'Concert One', cursive;
+    }
+    h2{
+      font-size:75px;
+      color:yellow;
+    }
+    li{
+      color:white;
+      font-size:30px;
+    }
+
+      .myButton {
+      	box-shadow: 3px 4px 0px 0px #ffcc00;
+      	background-color:#fff200;
+      	border-radius:5px;
+      	border:1px solid #337bc4;
+      	display:inline-block;
+      	cursor:pointer;
+      	color:#0f0f0a;
+        font-family: 'Concert One', cursive;
+      	font-size:30px;
+      	font-weight:bold;
+      	padding:12px 44px;
+      	text-decoration:none;
+      	text-shadow:0px 1px 0px #528ecc;
+      }
+      .myButton:hover {
+      	background-color:#f7ff03;
+      }
+      .myButton:active {
+      	position:relative;
+      	top:1px;
+      }
+
+
+    </style>
+  </head>
+  <body><center><h1 style="color:white;
+
+    font-family: 'Press Start 2P', cursive;
+
+;">OBSCURA</h1></center>
+      <br><br><br>
+    <center><h2>ISTE NITK congratulates all the winners of OBSCURA!</h2><center>
+    <br><center><ol>
+    {% for team in lboard %}
+      <li>{{team.name}}</li>
+    {% endfor %}
+    </ol></center>
+<a href="https://docs.google.com/document/d/1Pi8bMbRAHZD4uBAg3fFWPGibbdMBCfitazWoZBuWZhA/edit?usp=drivesdk"><button class="myButton">View Solutions</button></a>
+  </body>
+</html>
