@@ -39,3 +39,13 @@ class User(AbstractUser):
 class Core(models.Model):
     user = models.ForeignKey(User,on_delete=models.CASCADE)
     role = models.CharField(default="",max_length=100)
+
+class SigHead(models.Model):
+    user = models.ForeignKey(User,on_delete=models.CASCADE)
+    role = models.CharField(default="",max_length=100)
+
+class EventAcces(models.Model):
+    user = models.ForeignKey(User,on_delete=models.CASCADE)
+    role = models.CharField(default="",max_length=100)
+    read = models.BooleanField(default=False)
+    write = models.BooleanField(default=False)

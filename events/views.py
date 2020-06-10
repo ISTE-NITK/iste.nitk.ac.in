@@ -59,7 +59,7 @@ def event_register(request, event_id):
             add = None
             if event.members==3:
                 add = request.POST['team_name']
-                obj=ThreeMember(event=event,team_name=request.POST['team_name'],participant1=request.POST['participant1'],participant2=request.POST['participant2'],participant3=request.POST['participant3'],phone1=request.POST['phone1'],phone2=request.POST['phone2'],email=request.POST['email'])                
+                obj=ThreeMember(event=event,team_name=request.POST['team_name'],participant1=request.POST['participant1'],participant2=request.POST['participant2'],participant3=request.POST['participant3'],phone1=request.POST['phone1'],phone2=request.POST['phone2'],email=request.POST['email'])
             elif event.members==4:
                 add = request.POST['team_name']
                 obj=FourMember(event=event,team_name=request.POST['team_name'],participant1=request.POST['participant1'],participant2=request.POST['participant2'],participant3=request.POST['participant3'],participant4=request.POST['participant4'],phone1=request.POST['phone1'],phone2=request.POST['phone2'],email=request.POST['email'])
@@ -171,4 +171,3 @@ def create_event(request):
             return render(request,'events/create_event.html',{'form':form})
         messages.error(request,'Invalid input(s)! Please check again!')
         return render(request,'events/create_event.html',{'form':form})
-

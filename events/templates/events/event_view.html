@@ -22,11 +22,14 @@
                 <div class="card-action">
                     <center><a class="indigo-text" href="{% url 'event_register' event.id%}">Register Now</a></center>
                 </div>
-                {% if user|has_group:"Core" %}
-                <div class="card-action">
-                    <center><a class="indigo-text" href="{% url 'view_registrations' event.id%}">View Registrations</a></center>
-                </div>
+                {% if user.is_authenticated %}
+                  {% if user|hasReadAccess %}
+                  <div class="card-action">
+                      <center><a class="indigo-text" href="{% url 'view_registrations' event.id%}">View Registrations</a></center>
+                  </div>
+                  {% endif %}
                 {% endif %}
+
                 <div class="card-reveal">
                     <span class="card-title grey-text text-darken-4">Point of Contact (hover on image)
                         <i class="material-icons right">close</i>
@@ -58,18 +61,20 @@
             </div>
         </div>
     {% endfor %}
-    {% if user|has_group:"Core" %}
-    <div class="col s12 m4">
-        <div class="card hoverable">
-          <div class="card-image">
-              <a href="{% url 'create_event' %}"><img src="https://www.impetus.com/sites/default/files/plus.png" style="background-color:#000080"></a>
+    {% if user.is_authenticated %}
+      {% if user|hasWriteAccess %}
+      <div class="col s12 m4">
+          <div class="card hoverable">
+            <div class="card-image">
+                <a href="{% url 'create_event' %}"><img src="https://www.impetus.com/sites/default/files/plus.png" style="background-color:#000080"></a>
+            </div>
+            <div class="card-action">
+                <center><a class="indigo-text" href="{% url 'create_event' %}">Create new event</a></center>
+            </div>
           </div>
-          <div class="card-action">
-              <center><a class="indigo-text" href="{% url 'create_event' %}">Create new event</a></center>
-          </div>
-        </div>
-    </div>
-    <!-- <br><a class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">add</i></a> -->
+      </div>
+      <!-- <br><a class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">add</i></a> -->
+      {% endif %}
     {% endif %}
 </div>
 

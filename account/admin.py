@@ -41,3 +41,10 @@ class SIGAdmin(admin.ModelAdmin):
 class CoreAdmin(admin.ModelAdmin):
     list_display=('user','role')
 
+@admin.register(SigHead)
+class SigHeadAdmin(admin.ModelAdmin):
+    list_display=('user','role')
+
+@admin.register(EventAcces)
+class EventAccessAdmin(admin.ModelAdmin):
+    list_display=('user','role','read','write')

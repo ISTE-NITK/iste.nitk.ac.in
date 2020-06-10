@@ -1,5 +1,5 @@
 *pyc
 .env
 db.sqlite3
-media
+media/user*
 deploy.sh
