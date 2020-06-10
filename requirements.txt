@@ -7,7 +7,7 @@ Cheetah==2.4.4
 CherryPy==8.9.1
 Click==7.0
 configobj==5.0.6
-cryptography==2.1.4
+cryptography==2.3
 cssselect==1.0.3
 cssutils==1.0.2
 cycler==0.10.0
