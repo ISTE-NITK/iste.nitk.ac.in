@@ -78,3 +78,8 @@ class Core(models.Model):
         default="",
         max_length=100
     )
+    description = models.TextField(
+        default=""
+    )
+
+    
