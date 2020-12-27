@@ -9,6 +9,7 @@ import EventComponent from './EventComponent';
 import SigComponent from './SigComponent';
 import TeamComponent from './TeamComponent';
 import LeaderboardComponent from './LeaderboardComponent';
+import ProjectComponent from './ProjectComponent';
 
 import '../css/constants.css';
 
@@ -18,11 +19,12 @@ class App extends React.Component{
             <Router history={history}>
                 <Header/>
                 <div>
-                    {/* <Route path='/' exact component={HomeComponent}/> */}
+                    <Route path='/' exact component={HomeComponent}/>
                     <Route path='/event' exact component ={EventComponent}/>
                     <Route path='/sig' exact component={SigComponent}/>
                     <Route path='/team' exact component={TeamComponent}/>
-                    <Route path='/' exact component={LeaderboardComponent}/>
+                    <Route path='/project' exact component={ProjectComponent}/>
+                    <Route path='/leaderboard' exact component={LeaderboardComponent}/>
                 </div>
                 <Footer/>
             </Router>
