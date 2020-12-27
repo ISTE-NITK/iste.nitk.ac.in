@@ -1,0 +1,95 @@
+.leaderboard input{
+    margin: 10px 10px;
+    max-width: 100px;
+}
+
+.retro{
+    background-image: url('../back.jpg');
+}
+
+.leaderboard .choice{
+    display: inline;
+}
+
+@font-face {
+    font-family: 'abcd';
+    src: url('/src/Gotham\ Pro\ Regular.ttf');
+  }
+  
+
+.leaderboard input{
+    color: var(--Primary);
+}
+
+.leaderboard .header{
+    font-family: 'abcd';
+    font-weight: 100;
+    color: var(--Primary);
+}
+
+.leaderboard button{
+    background-color: var(--Secondary);
+    color: var(--Primary);
+    border: 2px solid var(--Primary);
+    padding: 10px 5px;
+    margin: 0px 5px;
+    border-radius: 17px;
+    font-family: 'abcd';
+}
+
+.leaderboard button:hover{
+    cursor: pointer;
+}
+
+.leaderboard label{
+    color: var(--Primary);
+}
+
+.leaderboard button.active{
+    background-color: var(--Primary);
+    color: var(--Secondary);
+}
+
+.leaderboard .filter label{
+    font-size: large;
+}
+
+.leaderboard-table{
+    /* border: 10px;
+    border-color: var(--Primary);
+    border-style: solid;
+    border-radius: 16px; */
+    text-transform: capitalize;
+    font-size: medium;
+}
+
+.leaderboard table>thead th{
+    color: var(--Secondary);
+    background-color: var(--Primary);
+    text-transform: capitalize;
+    border-radius: 0px ;
+    font-weight: bold;
+    font-size: large;
+}
+
+.leaderboard table>tbody tr{
+    border-color:var(--primary);
+    border-width: 5px;
+}
+
+
+/* .leaderboard table>tbody tr:hover{
+    box-shadow: 5px 5px 8px black, 15px 15px 8px gray, 15px 15px 8px whitesmoke;
+    font-weight: 1000;
+} */
+
+/* 
+.leaderboard table>tbody>tr:nth-child(even){
+    color: var(--primary) !important;
+    background-color: var(--Secondary) !important;
+}
+
+.leaderboard table>tbody>tr:nth-child(odd){
+    color: var(--Secondary) !important;
+    background-color: var(--primary) !important;
+} */
