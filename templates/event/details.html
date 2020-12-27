@@ -18,10 +18,10 @@
                     <i class="inline-icon material-icons">date_range</i> 
                     {{event.date_time | date:"d/m/Y P"}} 
                 </p>
-                <br>
-                <p class="grey-text">
+                <!-- <br> -->
+                <!-- <p class="grey-text">
                     <i class="inline-icon material-icons">location_on</i>{{event.venue}}
-                </p>
+                </p> -->
                 <br>
                 <p class="grey-text">
                     <i class="inline-icon material-icons">group</i>
@@ -61,7 +61,8 @@
                 </p><br>
             <div class="card-action">
                 <center>
-                    <a class="indigo-text" href="{{event.form_url}}">Register Now</a>
+                    
+                    <a class="indigo-text" href="{{event.form_link}}" target="_blank">Register Now</a>
                 </center>
             </div>
 
