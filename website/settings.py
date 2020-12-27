@@ -53,7 +53,8 @@ INSTALLED_APPS = [
     'project',
     'recruitment',
     'sig',
-    'team'
+    'team',
+    'leaderboard',
 ]
 
 MIDDLEWARE = [

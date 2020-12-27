@@ -14,5 +14,6 @@ urlpatterns = [
     path('recs/', include('recruitment.urls', namespace = 'recruitment')),
     path('sig/',include('sig.urls', namespace = 'sig')),
     path('team/',include('team.urls', namespace = 'team')),
+    path('leaderboard/',include('leaderboard.urls', namespace = 'leaderboard')),
     path('ckeditor/',include('ckeditor_uploader.urls')),
 ] + static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)
