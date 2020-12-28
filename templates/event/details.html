@@ -51,11 +51,11 @@
                     Points of contact:<br>
                     <ul>
                         {% for member in event.contacts.all %}
-                            {% if member.gender == 'F' %}
+                            <!-- {% if member.gender == 'F' %}
                                 <li>{{member.first_name}} {{member.last_name}} : {{member.hostel_address}}</li>
-                            {% else %}
+                            {% else %} -->
                                 <li>{{member.first_name}} {{member.last_name}} : <a href="tel:{{member.phone_number }}">{{member.phone_number}}</a></li>
-                            {% endif %}
+                            <!-- {% endif %} -->
                         {% endfor %}
                     </ul>
                 </p><br>
