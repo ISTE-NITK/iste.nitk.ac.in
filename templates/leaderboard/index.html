@@ -34,7 +34,7 @@
             if (td) 
             {
                 txtValue = td.textContent || td.innerText;
-                if (txtValue.toUpperCase().indexOf(filter) > -1&& count<3) 
+                if (txtValue.toUpperCase().indexOf(filter) > -1&& count<15) 
                 {
                     tr[i].style.display = "";
                     count+=1;
@@ -104,10 +104,10 @@
             No results found
         </td>
     </tr>
-    {% for participant in participants %}
+    {% for rank,participant in participants %}
     <tr>
         <td>
-            {{participant.rank}}
+            {{rank}}
         </td>
         <td>
             {{participant.name}}

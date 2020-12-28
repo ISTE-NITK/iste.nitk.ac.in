@@ -4,4 +4,12 @@ from .models import Participant
 # Create your views here.
 def indexView(request):
     participants = Participant.objects.all().order_by('-points','name','roll_no')
-    return render(request, 'leaderboard/index.html', {'participants':participants})
+    ranks = [1]
+    curr_rank = 1
+    for i in range(1,len(participants)):
+        if participants[i].points != participants[i-1].points:
+            ranks.append(i+1)
+            curr_rank = i+1
+        else:
+            ranks.append(curr_rank)
+    return render(request, 'leaderboard/index.html', {'participants':zip(ranks,participants)})
