@@ -1,0 +1,73 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ISTE Obscura home</title>
+    <link rel="icon" type="image/png" href="{% static '/images/logobng.png' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="{% static '/css/home.css' %}">
+</head>
+<body>
+    <div id="bg">
+        <img src="{% static '/images/Home.png'%}" alt="">
+    </div>
+    <div class="navbar navbarCSS" style="background-color: rgba(0, 0, 0, 0.8);position: fixed;top: 0%;left: 0%;width: 100vw;">
+        <nav class="transparent z-depth-0">
+            <a class="left" style="padding-left: 1vw;">
+                <h5>{{obj.name}}</h5>
+            </a>
+            <a class="brand-logo center">
+                <img width="75" src="{% static '/images/logobng.png' %}">
+            </a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="https://iste.nitk.ac.in/">About Us</a></li>
+            </ul>
+
+        </nav>
+    </div>
+    <div class="center white-text" style="background-color: rgba(0, 0, 0, 0.8);position: fixed;top:9.5%;left: 0%;width: 10vw;padding:1vh;">
+    <h6>Current Score</h6>  <h5 style="color: blanchedalmond;">{{obj.score}}</h5>
+    </div>
+
+    <!--Questions-->
+    {% if not score.1  %}<a href="{% url 'Question' diff=1 node=1 %}">{% else %}<a>{% endif %}<button title="Main Building" class="btn-floating {% if node.1 and score.1 %} completed {% elif node.1 %} visited pulse {% else %} not-visited pulse {% endif %}btn-large mainbldg "><i class="fa fa-flag-checkered" aria-hidden="true"></i></button></a>
+    {% if not score.5 %}<a href="{% url 'Question' diff=2 node=5 %}">    {% else %}<a>{% endif %}<button title="SJA" class="btn-floating {% if node.5 and score.5 %} completed {% elif node.5 %} visited pulse  {% else %} not-visited pulse  {% endif %} btn-large sja "><i class="fa fa-flag-checkered" aria-hidden="true"></i></button></a>
+    {% if not score.2 %}<a href="{% url 'Question' diff=3 node=2 %}">{% else %}<a>{% endif %}<button title="Nandini" class="btn-floating {% if node.2 and score.2 %} completed {% elif node.2 %} visited pulse {% else %} not-visited pulse {% endif %} btn-large nandini"><i class="fa fa-flag-checkered" aria-hidden="true"></i></button></a>
+    {% if not score.3 %}<a href="{% url 'Question' diff=3 node=3 %}">  {% else %}<a>{% endif %}  <button title="Fresh and Honest" class="btn-floating {% if node.3 and score.3 %} completed {% elif node.3 %} visited pulse {% else %} not-visited pulse {% endif %} btn-large fnh"><i class="fa fa-flag-checkered" aria-hidden="true"></i></button></a>
+    {% if not score.4 %}<a href="{% url 'Question' diff=1 node=4 %}">   {% else %}<a>{% endif %} <button title="HCC" class="btn-floating {% if node.4 and score.4 %} completed {% elif node.4 %} visited pulse {% else %} not-visited pulse {% endif %} btn-large hcc"><i class="fa fa-flag-checkered" aria-hidden="true"></i></button>    </a>
+    {% if not score.6 %}<a href="{% url 'Question' diff=2 node=6 %}">  {% else %}<a>{% endif %}  <button title="LHC-C" class="btn-floating {% if node.6 and score.6 %} completed {% elif node.6 %} visited pulse {% else %} not-visited pulse {% endif %} btn-large lhcc"><i class="fa fa-flag-checkered" aria-hidden="true"></i></button>    </a>
+
+    {% if not score.9 %}<a href="{% url 'Question' diff=1 node=9 %}">  {% else %}<a>{% endif %}  <button title="The other entrance" class="btn-floating {% if node.9 and score.9 %} completed {% elif node.9 %} visited {% else %} not-visited {% endif %} btn-large nine"><i class="fa fa-flag-checkered" aria-hidden="true"></i></button>    </a>
+    {% if not score.7 %}<a href="{% url 'Question' diff=1 node=7 %}">  {% else %}<a>{% endif %}  <button title="GH entrance" class="btn-floating {% if node.7 and score.7 %} completed {% elif node.7 %} visited {% else %} not-visited {% endif %} btn-large seven"><i class="fa fa-flag-checkered" aria-hidden="true"></i></button>    </a>
+    {% if not score.8 %}<a href="{% url 'Question' diff=1 node=8 %}">  {% else %}<a>{% endif %}  <button title="SBI Gate" class="btn-floating {% if node.8 and score.8 %} completed {% elif node.8 %} visited {% else %} not-visited {% endif %} btn-large eight"><i class="fa fa-flag-checkered" aria-hidden="true"></i></button>    </a>
+
+    {% if not score.12 %}<a href="{% url 'Question' diff=2 node=12 %}">  {% else %}<a>{% endif %}  <button title="MB entrance" class="btn-floating {% if node.12 and score.12 %} completed {% elif node.12 %} visited {% else %} not-visited {% endif %} btn-large twelve"><i class="fa fa-flag-checkered" aria-hidden="true"></i></button>    </a>
+    {% if not score.10 %}<a href="{% url 'Question' diff=2 node=10 %}">  {% else %}<a>{% endif %}  <button title="Various labs" class="btn-floating {% if node.10 and score.10 %} completed {% elif node.10 %} visited {% else %} not-visited {% endif %} btn-large ten"><i class="fa fa-flag-checkered" aria-hidden="true"></i></button>    </a>
+    {% if not score.11 %}<a href="{% url 'Question' diff=2 node=11 %}">  {% else %}<a>{% endif %}  <button title="ECE, EEE, IT dep" class="btn-floating {% if node.11 and score.11 %} completed {% elif node.11 %} visited {% else %} not-visited {% endif %} btn-large eleven"><i class="fa fa-flag-checkered" aria-hidden="true"></i></button>    </a>
+
+    {% if not score.13 %}<a href="{% url 'Question' diff=3 node=13 %}">  {% else %}<a>{% endif %}  <button title="Civil and other dep" class="btn-floating {% if node.13 and score.13 %} completed {% elif node.13 %} visited {% else %} not-visited {% endif %} btn-large thirteen"><i class="fa fa-flag-checkered" aria-hidden="true"></i></button>    </a>
+    {% if not score.14 %}<a href="{% url 'Question' diff=3 node=14 %}">  {% else %}<a>{% endif %}  <button title="Swimming Pool" class="btn-floating {% if node.14 and score.14 %} completed {% elif node.14 %} visited {% else %} not-visited  {% endif %} btn-large fourteen"><i class="fa fa-flag-checkered" aria-hidden="true"></i></button>    </a>
+    {% if not score.15 %}<a href="{% url 'Question' diff=3 node=15 %}">  {% else %}<a>{% endif %}  <button title="New CS Dep" class="btn-floating {% if node.15 and score.15 %} completed {% elif node.15 %} visited {% else %} not-visited {% endif %} btn-large fifteen"><i class="fa fa-flag-checkered" aria-hidden="true"></i></button>    </a>
+
+
+    <!--Games-->
+    <a href="{% url 'BrickBreaker' %}">    <button title="Sports-Complex" class="btn-floating game btn-large sports pulse"><i class="fas fa-gamepad" aria-hidden="true"></i></button>    </a>
+    <a href="{% url 'Flappy' %}">    <button title="NITK Beach" class="btn-floating game btn-large beach pulse"><i class="fas fa-gamepad" aria-hidden="true"></i></button>    </a>
+    <a href="{% url 'PianoTiles' %}">    <button title="SAC" class="btn-floating game btn-large sac pulse"><i class="fas fa-gamepad" aria-hidden="true"></i></button>    </a>
+    <a href="{% url 'TwoTho' %}">    <button title="LHC-B" class="btn-floating game btn-large pulse lhcb"><i class="fas fa-gamepad" aria-hidden="true"></i></button>    </a>
+    <a href="{% url 'Typing' %}">    <button title="Library" class="btn-floating game btn-large pulse lib pulse"><i class="fas fa-gamepad" aria-hidden="true"></i></button>    </a>
+
+    <!--Options menu-->
+    <a href="{% url 'Logout' %}">    <div class="white-text center" style="position: fixed;top: 95%;left:0%;background-color: rgba(0, 0, 0, 0.8);width: 10vw;padding: 1vh;">Logout</div>    </a>
+    <a href="{% url 'LeaderBoard' %}">    <div class="white-text center" style="position: fixed;top: 89.5%;left:0%;background-color: rgba(0, 0, 0, 0.8);width: 10vw;padding: 1vh;">Leaderboard</div>    </a>
+    <a href="{% url 'Instructions' %}">    <div class="white-text center" style="position: fixed;top: 84%;left:0%;background-color: rgba(0, 0, 0, 0.8);width: 10vw;padding: 1vh;">Instructions</div>    </a>
+    <a href="{% url 'Gallery' %}">    <div class="white-text center" style="position: fixed;top: 78.5%;left:0%;background-color: rgba(0, 0, 0, 0.8);width: 10vw;padding: 1vh;">Gallery</div>    </a>
+
+    
+
+    <script src="https://use.fontawesome.com/a6a3445b13.js"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+</body>
+</html>

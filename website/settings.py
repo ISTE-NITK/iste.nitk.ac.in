@@ -55,6 +55,7 @@ INSTALLED_APPS = [
     'sig',
     'team',
     'leaderboard',
+    'App',
 ]
 
 MIDDLEWARE = [
