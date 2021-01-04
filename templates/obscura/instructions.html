@@ -7,6 +7,12 @@
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <title>ISTE Obscura Instructions</title>
         <link rel="icon" type="image/png" href="{% static '/images/logobng.png' %}">
+        <link rel="stylesheet" href="{% static '/css/home.css' %}">
+        <style>
+            li {
+                padding-bottom: 1%;
+            }
+        </style>
     </head>
     <body>
         <script src="https://kit.fontawesome.com/0a3d56d8b5.js" crossorigin="anonymous"></script>
@@ -23,13 +29,31 @@
                 
             </nav>
         </div>
-
-
-
-        <section id="inst" class="center">
-            <h2>Enter Instructions here</h2><br><br>
-        </section>
-
+        <br>
+        <br>
+        <div class="container">
+            <div class="row">
+                <h1 class="center">Obscura</h1>
+                <h2 class="center">Instructions</h2>
+            </div>
+            <div class="flow-text grey-text">
+                <ol>
+                    <li>Welcome to Obscura! We hope you have a blast participating(and winning :p) in this event!</li>
+                    <li>The rules are simple! First and foremost, register! Use your team name and give one of your teammate's roll number.</li>
+                    <li>There are 15 question nodes and 5 game nodes for you to explore!</li>
+                    <li>Explore these nodes and unlock different places and their views in the Gallery!</li>
+                    <li>The <button class="btn-floating not-visited btn-large"><i class="fa fa-flag-checkered" aria-hidden="true"></i></button> nodes are the question nodes and the question nodes which are pulsing <button class="btn-floating not-visited btn-large pulse"><i class="fa fa-flag-checkered" aria-hidden="true"></i></button>  unlock the above-mentioned views in the gallery.</li>
+                    <li>If you successfully answer a question, depending on the difficulty, you will be awarded 50, 100 or 150 points! The question node will subsequently turn <button class="btn-floating completed btn-large"><i class="fa fa-flag-checkered" aria-hidden="true"></i></button> !</li>
+                    <li> But beware! There's negative marking! You'll lose one-third of the attainable marks for each option you mark wrong! For example,-50 will be subtracted from your score if the attainable score of the question is 150!</li>
+                    <li>The question node will turn <button class="btn-floating visited btn-large"><i class="fa fa-flag-checkered" aria-hidden="true"></i></button> or <button class="btn-floating visited btn-large pulse"><i class="fa fa-flag-checkered" aria-hidden="true"></i></button>, if you've visited the node.</li>
+                    <li> We have five games for you! These are at the nodes marked by <button class="btn-floating game pulse btn-large"><i class="fas fa-gamepad" aria-hidden="true"></i></button> !</li>
+                    <li>Compete for high scores in games and earn points for your total Obscura score!</li>
+                    <li>Check the Leaderboard for information on which teams are leading!</li>
+                    <li>Complete special tasks mentioned in the iste website <attatch link> to earn points for the ISTE square one leaderboard!</li>
+                    <li>Please note that the Obscura leaderboard and the ISTE square one leaderboard are different.</li>
+                </ol>
+            </div>
+        </div>
 
 
 
