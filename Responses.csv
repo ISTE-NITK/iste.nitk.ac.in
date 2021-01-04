@@ -1,0 +1,269 @@
+id,quest,op1,op2,op3,op4,difficulty,ans
+1,Which of the following is the hottest planet in the solar system?,Mercury, Venus,Earth,Mars,1,2
+2,"Two ladies played cards for candy; the winner received one piece per game from the loser. When it was time for one of the ladies to go home, one lady had won three games, while the other lady had a profit of three pieces of candy.
+
+How many individual games had they played?",7,8,9,10,1,3
+3,"Observe the following and answer the following.
+12×12=9
+23×23=16
+34×34=?",14,13,15,16,1,2
+4,"Which number is like the given set of numbers (50, 101, 170) ?",80,37,121,120,1,2
+5,"You are given two decks of cards, what is the least amount of cards you must take to be guaranteed at least one four-of-a-kind?",35,40,45,50,2,2
+6,Which of the following is the hottest planet in the solar system?,Mercury,Venus,Earth,Mars,1,2
+7,Choose the group of letters which is different from others.,ABD,HIK,VWZ,QRT,1,3
+8,"Your friend Ishaan is confused, help him solve the problem.
+How many steps are required to break an m × n sized bar of chocolate into 1 × 1 pieces  
+You can break an existing piece of chocolate horizontally or vertically.
+You cannot break two or more pieces at once (so no cutting through stacks).
+? a)m*n  b)m*(n-1)  c)(m-1)*(n-1)   d)m*n - 1",m*n,m*(n-1),(m-1)*(n-1),m*n-1,2,4
+9,"Find the next number
+7,20,47,94,167 ____?",272,271,274,275,3,1
+10,"If + means ÷ ,- means x, ÷ means + and x means +, then the value of 
+36 x 12 +4 ÷ 6+2-3
+when simplified is ?",2,42,18,6.5,2,2
+11,"Find the next number?
+1,2,6,15,31,___",56,57,58,59,3,1
+12,"How many combinations of two-digit numbers having 8 can be made from following numbers
+
+8, 5, 2, 1, 7, 6  ?",9,10,11,12,2,3
+13,Who among the following wrote Sanskrit grammar?, Kalidasa,Charaka, Panini,Chanakya,1,3
+14,"If train is called tractor, tractor is called moped, moped is called car, car is called scooter, scooter is called bicycle, bicycle is called bus, which is used to plough a field ? ",Train,Bus,Car,None of these,1,4
+15,"Five bells begin to toll together and toll respectively at intervals of 6, 5, 7, 10 and 12 seconds. How many times will they toll together in one hour excluding the one at the start ?",7,8,9,10,3,2
+16,Golf player Vijay Singh belongs to which country?,India,Fiji,UK,Russia,2,2
+17,"""Below given a series of some five numbers :
+446 362 576 495 241
+If the middle digit in all the numbers are removed, then which of the following number will be maximum? 
+Options:
+a)446
+b)362
+c)576
+d)495
+
+""",446,362,576,495,1,3
+18,"A car driver knows four different routes from Delhi to Amritsar. From Amritsar to Pathankot, he knows three different routes and from Pathankot to Jammu he knows two different routes. How many routes does he know from Delhi to Jammu?",4,8,12,24,3,4
+19,Where is the Film and TV institute of India located?,Pune (Maharashtra),Pimpri (Maharashtra),Perambur (Tamilnadu),Kochi (Kerala),2,1
+20,"A and B were talking to each other face to face in the evening before sunset . If B’s shadow was exactly to the right of B, which direction was A facing?  ",North,South,East,Data inadequate,2,2
+21,Epsom (England) is the place associated with?,Shooting,Horse racing, Polo,Snooker,3,2
+22,"If you have 12 pairs each of black ,red ,yellow and white socks in a dark room . what is minimum number of socks that you need to choose so that it will be matched pair ?
+",2,5,9,13,1,2
+23,"Find out the alternative which will replace the question mark.
+Virtue : Vice :: Admiration: ?  ",Jovial,Repentance,Disrespect,Chide,2,3
+24,"Federation Cup, World Cup, Allywyn International Trophy and Challenge Cup are awarded to winners of?", Basketball,Tennis,Cricket, Volleyball,3,4
+25,"If Dogs have 2 ears,cats have 2 ears and pig has 2ears. Then how many ears we do have?
+",4,8,6,2,1,1
+26,Find the missing Number -> 20 : 8005 :: 2: ?  ,9,13,12,8,2,2
+27,"If a giraffe has two eyes, a monkey has two eyes, and an elephant has two eyes, how many eyes do we have?",3,2,4,6,1,3
+28,"A watch which gains uniformly is 2 minutes low at noon on Monday and is 4 min. 48 sec fast at 2 p.m. on the following Monday. When was it correct?
+", 2 p.m. on Tuesday,3 p.m. on Thursday,3p.m.  on Saturday, 2 p.m. on Wednesday,2,4
+29,"In a certain code language, ‘We do different things’ is written as ‘ne tz iq dp’ ‘Do good deeds always’ is written as ‘ge qd dp yc’ ‘We hate evil deeds’ is written as ‘um ol qd tz’ ‘Some persons like evil good’ is written as ‘yc rc um tl zp’
+What is the code for “some different deeds”? ",rc tl zp,ne iq um,rc ne qd,qd rc yc,3,3
+30,"A man was murdered in his office.
+The suspects are Ericson, Maggi, Jason, Benny, Sona, Patick.
+A calendar found near the man has blood written 6, 4, 9, 10, 11
+Who is the murderer.?",Jason,Maggi,Benny,Ericson,1,1
+31,Rhythm of eyes' city name in India?,Nainital,Chennai,Srinagar,New Delhi,2,1
+32,"Once,There was a Overconfident Student who believed he could solve any puzzle.. But he got puzzeld with this one, Could you help him out?
+If """"ISTE"""" stands for """"DNOZ"""" then he was asked to find what does """"LOVE"""" stand for ( Don't be Overconfident,Think twice :)  )?",GJPZ,GIQZ,GJQY,None of the Above,1,4
+33,"If A is substituted by 4, B by 3, C by 2, D by 4, E by 3, F by 2 and so on, then what will be total of the numerical values of the letters of the word SICK?",11,10,9,8,2,1
+34,"You have 30 Rs with you. You go to a shop and shopkeeper tells you price as 1 Rs per chocolate. He also tells you that you can get a chocolate in return of 3 wrappers. How many maximum chocolates you can eat?
+",33,40,43,44,3,4
+35,111 13 112 24 113 35 117 ?,46,48,68,79,2,4
+36,"A man fell in a 50m deep well. He climbs 4 meters up and slips 3 meters down in one day. How many days would it take for him to come out of the well?
+",47,67,33,21,3,1
+37,"When you type local host in your pc, You get combination of numbers associated with it known as ip address, What's the ip address associated with local host? ",127.0.0.1,126.0.0.1,127.0.0.0,I Don't know to Google ip address of Local host!,1,1
+38,"If  1 1 1 1 = R
+    2 2 2 2 = T
+    3 3 3 3 = E
+    4 4 4 4 = N
+Then  5 5 5 5 = ?",Y,Z,T,X,3,1
+39,A number of cats got together and decided to kill between them 999919 rats. Every cat killed an equal number of rats. Each cat killed more rats than there were cats. How many rats do you think that each cat killed ?,1009,991,1000,891,3,1
+40,"Pointing to the photograph, Suresh said, ""Guru is brother of Ram. Ram is the son of Shyam. I am Shyam's father” then what is Guru of Suresh?
+",Grandson,Grandfather,Maternal Uncle,Father,1,1
+41,"There was a student who was Exceptionally brilliant, He wanted to communicate secretly with his girl bestie.. In his Code language, MONOPOLY is written as NMNLXKNO. This code language was going on for days.. One fine day, During a Evening walk she saw ""DIRECTOR""  and wanted to alert his friend.  Would you mind helping her out?",DQNBCSHQ, DNSBQHCQ,DQHCQNSB,DQNSBQHC,2,3
+42,Which one of these characters is not friends with Harry Potter?,Ron Weasley,Neville Longbottom,Rubeus Hagrid,Draco Malfoy,1,4
+43,"A man has 53 socks in his drawer: 19 identical blue, 16 identical black and 18 identical red. The lights are fused and he is completely in the dark. How many socks must he take out to make 100 per cent certain he has a pair of black socks?",2,16,37,39,1,4
+44,Who founded Microsoft?, Bill Hader,Jeff Bezos,Mark Zuckerberg,Bill Gates,1,4
+45,"One late night a Dasa kid was Hungry? Night Canteen to the rescue..
+If One Roti + Paneer Butter Masala costs you $1.10, Paneer Butter masala costs $1 more than the ball. What's the cost of a roti? ",$0.10,$0.50,$0.01,$0.05,2,4
+46,"A man fell in a 200m deep well. He climbs 6 meters up and slips 4 meters down in one day. How many days would it take for him to come out of the well?
+",97,98,110,114,2,2
+47,What is the name of the second American astronaut to step foot on the moon?,Buzz Aldrin,Neil Armstrong,Alan Bean,James Irwin,2,1
+48,Which one is logically the odd one out?,Dosage,Frivolous,Before,Curate,2,2
+49,"Warden decides to play a game with Students.. consider hostel is a long hall with 100 rooms in row. All doors are initially closed! Warden opens all doors in first round, In second round he toggles door which has door numbers which are multiple of 2, ie. Door number 2,4,6,8... 100. In third round he toggles the door multiples of 3, ie. 3,6,9,12.. 99. And so untill 100th round. At the end of 100 rounds warden is exhausted and Dean of Hostel affairs plans to quiz warden..
+He asks which door is open after 100th round(Toggle means Opening closed door and vice versa)?",64,2,99,71,3,1
+50,The Da Vinci Code opens with a murder in which museum?,The Guggenheim , The Louvre ,The Van Gogh museum ,The Metropolitan Museum of Art,2,2
+51,"A coca-cola tin is kept on the table. When the lid is open, then the weight?
+",Increases,Decreases,Increases then Decreases,Decreases then Increases,1,3
+52,"The average of three numbers is 72. The average of two of these numbers is 65. What is the third number?
+",86,56,92,112,3,1
+53,Which water sport is the official sport for the state of Hawaii?,water polo,swimming,surfing, water skiing,3,3
+54,"If some operation between these two sets ([3,23,21,5,27,6,17],[6,15,20,8,11,10,20]) corresponds to EXAMPLE. Then ([2,9,29,26,16,22,56,18],[15,6,15,19,17,4,44,11]) corresponds to ? ",MONGAZLG,QONGARLG,QONGAZLG,MORIARITY,3,4
+55,How many time zones are there in the world?,7,11,17,24,3,4
+56,Which number is the odd one out?,571219,461016,781523,921114,3,4
+57,"Aryan travelled from a point A straight to point B at a distance of 50 meters. He turned to his right and walks 50 meter more, then again turned right and walks 60 meter. Finally, he turned to right and walks 50 meters. How far is he from the starting point?",10,20,30,40,1,1
+58,"Suppose you and a friend set out on separate climbing expeditions, you to Mt. Everest and your friend to Mt. Godwin Austen. You both bring identical cooking equipment and intend to cook rice for dinner with equal volumes of water.
+On which peak is the rice going to cook faster?
+","Mt. Everest, 8,848 m above sea level","Mt. Godwin Austen (K2), 8,611 m above sea level",Rice cooks at the same speed on both peaks,None of the Above ,1,2
+59,"Ana tosses a fair coin 50 times. Bastian tosses another fair coin 51 times.
+What's the probability that Bastian gets more heads than Ana does?",50/101,01-Feb,51/101, 13/25,2,2
+60,"In the word 'OUTDOOR' if all the vowels are replaced with the letter immediate next to it in the english alphabet series and all the consonants are replaced with the letter immediate before it in the english alphabet series, then how many vowels are there in the new word so formed?",one,two ,more than two,none,1,4
+61,"One hundred boxes are in a row, and a precious diamond is hidden inside one of them. You don't know which box has the diamond.
+All the boxes are labeled the same, as shown below, but only one of these boxes is telling the truth.
+What is the minimum number of boxes you need to open to be sure about which box contains the diamond?
+",0,1,2,3,2,2
+62,"In a row of 60 students Lallu is 41th from right end and Kellu is 48st from left end, Yeshu is exactly in the middle of Lallu and Kellu . What is the position of Yeshu from left end of the row?
+",24,32,34,42,2,3
+63,"Three triangles of equal perimeters are put together to form a bigger triangle of side lengths 13, 14, and 15.
+What is the ratio of the areas of the three triangles?",02:04:05,03:06:07,04:07:09,05:11:12,3,1
+64,"How many such pair of letters are there in the word 'TROPICAL' which have as many letters between them in the word as they have between them in the English alphabet?
+",seven,four,five,three,2,3
+65,"If 11 (160)15,11(237)22,then value of 19(?)18 will be –?",228,337,400,681,3,2
+66,"A monkey is typing a string of random letters, with all letters equally (and independently) likely to be typed.
+Which word is more likely to appear first in the string, heart or earth?",Heart,Earth,Equal Likely,Depends on the Monkeys Mood,3,1
+67,"If 
+12+3=18
+56+2=39
+28+1=33
+Find 41+5=?",30,40,50,60,3,1
+68,100 people standing in a circle in an order 1 to 100. No. 1 has a sword. He kills the next person (i.e. No. 2) and gives the sword to the next (i.e. No. 3). All people do the same until only 1 survives. Which number survives at the last?,71,63,49,73,1,4
+69,A car has 4 tyres and 1 spare tyre. Each tyre can travel a maximum distance of 20000 miles before wearing off. What is the maximum distance the car can travel before you are forced to buy a new tyre? You are allowed to change tyres (using the spare tyre) an unlimited number of times.,12000,30000,25000,18000,1,3
+70,"In a country, all families want a boy. They keep having babies till a boy is born. What is the expected ratio of boys and girls in the country?",27:75,50:50:00,80:20:00,60:40:00,2,2
+71,A man fell in a 50m deep well. He climbs 4 meters up and slips 3 meters down in one day. How many days would it take for him to come out of the well?,47,30,29,13,2,1
+72,"A person has 3000 bananas and a camel. The person wants to transport the maximum number of bananas to a destination which is 1000 KMs away, using only the camel as a mode of transportation. The camel cannot carry more than 1000 bananas at a time and eats a banana every km it travels. What is the maximum number of bananas that can be transferred to the destination using only camel (no other mode of transportation is allowed). ",633,533,1500,467,3,2
+73,You have got someone working for you for five days and a gold bar to pay him. You must give them a piece of gold at the end of every day. What are the fewest number of cuts to the bar of gold that will allow you to pay him 1/5th each day?,3,2,6,5,3,2
+74,How many 1s are there in 1-100? ,21,20,19,30,1,1
+75," If a shopkeeper gives 15% discount, he still earns 15% profit. If he now gives 10% discount then what is the profit percentage he gains?",24.5,26,30,50,1,1
+76,Unit place of 6^(2345)^(5738) is?? ,1,4,7,6,2,4
+77,"While reading chemistry text book in frustration I tore out the pages 7,8,53, 54,230,231.
+How many sheets did I tear out? ",4,3,6,7,2,1
+78,"J L P O E D T E D O P E P O T L J D P J O D P D L P J O J P E D O
+ 
+If all the O's are dropped from the above arrangement, which of the following will be twelfth from the left end of the above arrangement?",J,L,P,D,1,3
+79,"There are three boxes. One contains red balls. Another contains green balls. And the final box has both red balls and green balls. All three boxes, R, G and R+G are incorrectly labelled. You are allowed to see the one ball of one crate. Which crate do you choose so that you'll know exactly which crate has which balls? 
+",R,G,R+G,Not Possible,1,3
+80,"7 4 5 = 282043
+6 3 4 = 181226
+5 8 2 = 401654
+9 7 3 = 632181
+6 2 9 = ? 
+",121821,128121,181281,128211,1,1
+81,"If South-East becomes West, North-East becomes South and so on. What will West become?",North-east,North-west,South-west,South-east,1,1
+82,"B is father of Q. B has only two children. Q is the brother of R. R is the daughter of P. A is the granddaughter of P. S is the father of A. How is S related to B?
+",Mother,Daughter,Son-in-Law,Son,2,3
+83,Pratiksha and Vani can do a piece of work in 20 days and Pratiksha alone can do it in 24 days. In how many days can Vani do it alone?,120,45,50,100,2,1
+84,"QPO, NML, KJI, _____, EDC",HGF,CAB,JKM,GHD,1,1
+85,"There are 70 teachers. How many unmarried females are above 31years of age? 
+1.30 teachers are married
+2.24 teachers are above 31yrs
+3.19 married teachers are above 31yrs of which 7 are male
+4.12 males are above 31years of age. 
+5.15 males are married. 
+6. 30 females are there
+",7,5,3,0,2,4
+86,"Find the missing number in the series?
+
+5, 11, ?, 29, 41, 55, 71
+",13,17,16,19,2,4
+87,"If LINGER is 123456 and FORCE is 56789, then FIERCE is",456678,345667,556789,344567,3,1
+88,"
+DEF, DEF2, DE2F2, _____, D2E2F3",DEF3,D3EF3,D2E3F,D2E2F2,1,4
+89,In a family there are several brothers and sisters . Every 2boys have brothers as many as sisters and each girl has 2 brothers less than twice as many brothers as sisters. Now find the number of boys and girls.,"8,6","6,4","10,6","4,2",3,1
+90,"Find the ? in the series 
+376, ?, 88, 40, 16, 4, -2",144,188,160,180,3,2
+91,"Tanya is older than Eric.
+Cliff is older than Tanya.
+Eric is older than Cliff.
+If the first two statements are true, the third statement is
+",TRUE,FALSE,uncertain,Less information ,2,2
+92,"How many times in a day, are the hands of a clock in straight line but opposite in direction?",20,22,24,26,1,2
+93,In a certain code 'MISSIONS' is written as 'MSIISNOS'. How is 'ONLINE' written in that code?,OLNNIE, ONILEN   , NOILEN , LNOENI ,1,1
+94,"Blueberries cost more than strawberries.
+Blueberries cost less than raspberries.
+Raspberries cost more than strawberries and blueberries.
+If the first two statements are true, the third statement is
+A.	true
+B.	false
+C.	uncertain
+D.    Cant be said
+E.     Less information ",TRUE,FALSE,Uncertain,Less Information,2,1
+95,In a certain code 'CERTAIN' is coded as 'BFQUZJM'. How is 'MUNDANE' coded in that code?, LVMEZOD,NTCOMBF,NTOCNBF , LTMCZOF,2,1
+96,"In a lake there are 10 stepping stones labelled A to J. Starting from step A, every minute a frog jumps to the 4th step from where it started - that is from the step A it would go to E then to I then to C etc. Where would the frog end up at the 60th minute if it starts at A?",B,A,D,E,2,2
+97,"SIY, OEU, KAQ, GWM, CSI 
+
+A.    WNE
+
+B.    WNB
+
+C.    WNE
+
+D.    WMC
+
+E.    KAQ""",WNE,WNB,WNE,WMC,3,4
+98,"If a giraffe has two eyes, a monkey has two eyes, and an elephant has two eyes, how many eyes do we have?",1,8,10,4,3,4
+99,"The alphabet are arranged in a circular manner. Let A be in position 1. One turn clockwise means Z is at 1, A at 2,etc and in a similar manner one turn anticlockwise implies  A at 26, B at 1, etc. 
+Which is letter is in the 4th position after 3turns clockwise, 5 turns anticlockwise, 2 turns anticlockwise, 5turns clockwise, 3 turns anticlockwise, 4turns clockwise? 
+",A,B,C,D,3,2
+100,"QPO, SRQ, UTS, WVU, ? 
+",XVZ,ZYA,YXW, VWX,3,3
+101,"If 27 * 3 = 243 and 5 * 4 = 80, then what is the value of 3 * 7 ?
+",84,147,63,84,1,2
+102,"A tourist covers half of his journey by train at 60 km/h, half of the remainder by bus at 30 km/h and the rest by cycle at 10 km/h. The average speed of the tourist in km/h during his entire journey is
+a)36
+b)30
+c)24
+d)18""",36,30,24,18,1,3
+103,"Find the missing number in the series: 8, 15, 28, 53, ?, 199
+
+",101,102,103,104,1,2
+104,"In a coded language SHIFT is written a UFKDV, then COVET may be written in as:
+",EMXCV,FNYDU,EQUDS,EXCUV,2,1
+105,"If Z = 52 and ACT = 48, then BAT will be equal to:
+",40,42,44,46,2,4
+106,"If NARUTO is coded as MBIVGP, then the corresponding code for SASUKE will be: ",TZTFLV,HBHFLV,TBTVLF,HBHVPF,3,4
+107,"There is an 8 by 8 chessboard in which two diagonally opposite corners have been cut off .You are given 31 dominos, and a single domino can cover exactly two squares. Can you use the 31 dominos to cover the entire board?
+",Yes,No,none of the above ,all of the above,1,2
+108,"""There are 3 ants sitting on three corners of a triangle. All ants randomly pick a direction and start moving along edge of the triangle. What is the probability that any two ants collide?
+",06-Aug,02-Aug,05-Aug,07-Aug,2,1
+109,"Find the missing number: 132, 156, ?, 210, 240, 272
+",182,196,199,204,3,1
+110,"A political party orders an arch for the entrance to the ground in which the annual convention is being held. The profile of the arch follows the equation y = 2x – 0.1x2 where y is the height of the arch in meters. The maximum possible height of the arch is
+",8 m,10 m,12 m,14 m,2,2
+111,"""You have got someone working for you for five days and a gold bar to pay him. You must give them a piece of gold at the end of every day. What are the fewest number of cuts to the bar of gold that will allow you to pay him 1/5th each day?
+",3,2,4,5,3,2
+112,"""100 people standing in a circle in an order 1 to 100. No. 1 has a sword. He kills the next person (i.e. No. 2) and gives the sword to the next (i.e. No. 3). All people do the same until only 1 survives. Which number survives at the last?
+There are 100 people starting from 1 to 100.
+",9,69,50,73,3,4
+113,"I fly when I am born, lie when I'm alive, and run when I am dead. What am I? 
+",A grain of sand,An eaglet,A snowflake,A humming bird,1,3
+114,Find the odd one out :,Bird,Kite,Owl,Kiwi,1,1
+115,"A is son of C while C and Q are sisters. Z is mother of Q. If P is son of Z , which of the following statements is correct ? 
+",Q is grandfather of A,P is maternal uncle of A, P is cousin of A,C is brother of A,2,2
+116,"""A man faces north. Turning to his right , he walks 25 meters. He then turns to his left and walks 30 meters. Next , he moves 25 meters to his right. He then turns to his right again and walks 55 meters. Finally , he turns to the right and moves 40 meters. In which direction is he from his starting point ?
+",south,north,north west,south east,2,4
+117,"""Which of the following options is correct regarding the two statements given below :
+I.  Many people visited the religious place during weekend.
+II. Few people visited the religious place during weekdays."," If I is the cause , II is the effect.","If II is the cause , I is the effect.",Both I and II are independent causes,Both I and II are effects of some common cause,3,4
+118,"3,7,23,95,?
+",62,128,479,575,3,3
+119,"In a party of 105 people, there are twice as many women as children and twice as many children as men. How many men were present?
+",16,18,21,15,1,4
+120,"In a row of trees, a tree is 12th from left end and 10th from right end. How many trees are there in the row ?
+1)19
+2)22
+3)23
+4)21
+",19,22,23,21,1,4
+121,"""Given below are three statements followed by three conclusions. Take the three statements to be true even if they vary from commonly known facts. Read the statements and decide which conclusions follow logically from the statements.
+
+Statements:
+1. All actors are musicians.
+2. No musician is a singer.
+3. Some singers are dancers.
+
+Conclusions:
+1. Some actors are singers.
+2. Some dancers are actors.
+3. No actor is a singer.",Only conclusion 1 follows.,Only conclusion 2 follows.,Only conclusion 3 follows.,At least 2 of the conclusions follows.,2,3
+122,"From his house, Ram went 15 kms to the north. Then he turns west and covered 20 km. Then he turned south and covered 5 km. Finally turning to east, he covered 25 km. In which direction is he from his house?",north west,north east,south east,south west,2,2
+123,"Three sisters live in  ROME. They agreed to buy new seeds: Rose and Baily would go and Charlie stayed to protect fields. Baily bought 75 sacks of wheat in the market whereas Rose bought 45 sacks. At home, they split the sacks equally. Charlie had paid 1400 dollars for the wheat. How much dollars did Baily and Rose get of the sum, considering equal split of the sacks? ",Baily :$1000  Rose :$25,Baily :$1000   Rose :$250,Baily :$1225   Rose :$175,Baily :$1000  Rose : $275,3,3
+124,"A,B,C,D,E are college friends  these 5 friends live in the same road A, B, C, D, E. The numbers of B, C, D when multiplied together equals 1260. The numbers B,C, D when added equal twice E’s number, and is even. A’s number is half as much again as E’s. The road numbers run from 2 to 222. What is D's house number?",23,35,12,36,3,2
