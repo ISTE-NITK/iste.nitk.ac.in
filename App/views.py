@@ -255,6 +255,9 @@ def pianotiles(request):
         name = request.session['user']
         objUser = User.objects.get(name = name)
         obj = Game.objects.get(name = objUser, gameId = 3)
+        scorePost = scorePost//2
+        if scorePost > 250:
+            scorePost = 250
         if obj.score < scorePost:
             objUser.score += scorePost - obj.score
             objUser.save()
