@@ -179,7 +179,7 @@
         var csrftoken = getCookie('csrftoken');
         function sendPost(score) {
             var data = new URLSearchParams("score=" + score)
-            fetch("http://127.0.0.1:8000/obscura/pianotiles/", {
+            fetch("https://iste.nitk.ac.in/obscura/pianotiles/", {
                 method: 'POST',
                 credentials: 'same-origin',
                 headers: {
