@@ -173,7 +173,7 @@ def question(request, diff, node):
         context['answered'] = 1
         ansAct = request.session['ans']
         ansPost = request.POST.get('answer').strip()
-        print(ansAct,ansPost)
+        # print(ansAct,ansPost)
         request.session.pop('question')
         request.session.pop('ans')
         if int(ansAct) == int(ansPost) and objNode.score == 0:
@@ -226,10 +226,10 @@ def flappy(request):
         return render(request, "obscura/games/flappy.html",{'lb':obj, 'name':nameSession})
 
     elif request.method == 'POST':
-        print('I am in flappy bird')
+        # print('I am in flappy bird')
         scorePost = int(request.POST.get('score').strip())
         normalised_score = 10*scorePost
-        print(normalised_score)
+        # print(normalised_score)
         #print(score)
         #print(request.POST)
         name = request.session['user']
@@ -254,7 +254,7 @@ def pianotiles(request):
         return render(request, "obscura/games/pianotiles.html", {'lb':obj,'name':nameSession})
     elif request.method == 'POST':
         scorePost = int(request.POST.get('score').strip())
-        print(scorePost)
+        # print(scorePost)
         #print(request.POST)
         name = request.session['user']
         objUser = User.objects.get(name = name)
@@ -274,7 +274,7 @@ def twotho(request):
         return render(request, "obscura/games/twotho.html", {'lb':obj,'name':nameSession})
     elif request.method == 'POST':
         scorePost = int(request.POST.get('score').strip())
-        print(scorePost)
+        # print(scorePost)
         #print(request.POST)
         name = request.session['user']
         objUser = User.objects.get(name = name)
@@ -331,7 +331,7 @@ def registrationPage(request):
         if form.is_valid():
             form.save()
             messages.success(request,"Registered Successfully!")
-            print('user created!')
+            # print('user created!')
             return redirect('Login')
 
     context = {'form' : form }
