@@ -341,5 +341,5 @@ def lboardGames(id):
 
 #leaderboard for entire users
 def lboard():
-    obj = User.objects.order_by('-score', 'name')[:11]
+    obj = User.objects.order_by('-score', 'name')[:10]
     return obj
