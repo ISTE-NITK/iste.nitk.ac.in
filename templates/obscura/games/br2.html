@@ -41,7 +41,7 @@
 
       console.log('Im being called by unity')
       var data = new URLSearchParams("score=" + score)
-      fetch("http://127.0.0.1:8000/brickbreaker/", {
+      fetch("http://127.0.0.1:8000/obscura/brickbreaker/", {
         method: 'POST',
         credentials: 'same-origin',
         headers: {
@@ -116,13 +116,15 @@
     <div style="width: 15vw;float: right;height: 40.625vw;">
       <h4 class="center">Leaderboard</h4>
       <hr style="margin-right: 5%;margin-left: 5%;" color="grey">
+      <ul style="width: 12vw;margin-left:5%;">
         {% for i in lb %}
         {% if forloop.counter0 %}
-        <h6 class="center grey-text">{{i.name.name}} | {{i.score}}</h6>
+        <li class="collection-item white-text"><h6>{{i.name.name}}<div class="secondary-content">{{i.score}}</div></h6></li>
         {% else %}
-        <h5 class="center">{{i.name.name}} | {{i.score}}</h5>
+        <li class="collection-item white-text"><h5>{{i.name.name}}<div class="secondary-content">{{i.score}}</div></h5></li>
         {% endif %}
         {% endfor %}
+      </ul>
     </div>
   </div>
 

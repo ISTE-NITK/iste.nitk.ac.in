@@ -206,7 +206,7 @@
                 //createjs.Tween.get(share).to({alpha:1, y: share.y + 50}, 400, createjs.Ease.sineIn).call(addClickToStart)
 
                 var data = new URLSearchParams("score="+counter.text)
-                fetch("http://127.0.0.1:8000/flappy/",{
+                fetch("http://127.0.0.1:8000/obscura/flappy/",{
                     method: 'POST',
                     credentials: 'same-origin',
                     headers:{

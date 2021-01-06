@@ -39,7 +39,7 @@
 
     function sendPost(score) {
       var data = new URLSearchParams("score=" + score)
-      fetch("http://127.0.0.1:8000/typing/", {
+      fetch("http://127.0.0.1:8000/obscura/typing/", {
         method: 'POST',
         credentials: 'same-origin',
         headers: {

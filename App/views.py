@@ -1,6 +1,5 @@
 from django.shortcuts import render, redirect
 from .models import *
-from django.contrib import messages
 from datetime import datetime
 from django.contrib.auth.forms import UserCreationForm
 from .forms import CreateUserForm
@@ -74,7 +73,6 @@ def loginPage(request):
             request.session['user'] = username
             return redirect('Home')
         else:
-            messages.error(request,'Invalid login credential! Please enter a valid username and password')
             return render(request, "obscura/login.html", {'msg':'Invalid login credentials! Please try again.'})
     else:
         return render(request,"obscura/login.html",{})
@@ -105,13 +103,11 @@ def registerPage(request):
         rollNo = request.POST.get('rollNo').strip()
         obj = User.objects.filter(name=name)
         if len(obj)==1:
-            messages.error(request,'User already exists!')
             return render(request, "obscura/register.html", {'msg':'User already exists! Please choose another username.'})
         else:
             obj = User.objects.create(name=name, pwd=pwd, rollNo=rollNo)
             obj.save()
             createObjects(obj)
-            messages.success(request,"Registered Successfully!")
             #print('user created!')
             return redirect('Cover')
 
@@ -330,7 +326,6 @@ def registrationPage(request):
         form = CreateUserForm(request.POST)
         if form.is_valid():
             form.save()
-            messages.success(request,"Registered Successfully!")
             # print('user created!')
             return redirect('Login')
 
