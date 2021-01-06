@@ -32,8 +32,8 @@ for row in l:
 	op2 = str(row[3]).strip()
 	op3 = str(row[4]).strip()
 	op4 = str(row[5]).strip()
-	diff = str(row[6]).strip()
-	ans = str(row[7]).strip()
+	diff = str(int(float(str(row[6]).strip())//1))
+	ans = str(int(float(str(row[7]).strip())//1))
 	obj = Question.objects.create(
 		quest = quest,
 		op1 = op1,
