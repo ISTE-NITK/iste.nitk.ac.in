@@ -225,6 +225,8 @@ def flappy(request):
         # print('I am in flappy bird')
         scorePost = int(request.POST.get('score').strip())
         normalised_score = 10*scorePost
+        if normalised_score > 340:
+            normalised_score = 340
         # print(normalised_score)
         #print(score)
         #print(request.POST)
