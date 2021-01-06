@@ -11,6 +11,14 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <title>ISTE Obscura Piano Tiles</title>
   <link rel="icon" type="image/png" href="{% static '/images/logobng.png' %}">
+  <style>
+    #titleGame.container
+    {
+      margin: 0 auto;
+      max-width: 100vw;
+      width: 100%;
+    }
+  </style>
     <style>
         #btn {
             position: absolute;
@@ -72,16 +80,17 @@
   
       </nav>
     </div>
-    
-    <div class="center">
-      <h2>Piano Tiles</h2>
-      <h5 class="grey-text">Score</h5>
-    </div>
 
-    <div style="position: absolute;top:15%;right: 2%;">
-        <h4>Team Name</h4>
-        <h5 class="right grey-text" style="margin-top: -7%;">{{name}}</h5>
-    </div> 
+    <div  id="titleGame" class="row container">
+        <div class="center col l4 offset-l4">
+            <h2>Piano Tiles</h2>
+            <h5 class="grey-text">Score</h5>
+        </div>
+        <div class="col l4 ">
+            <h4 class="right-align">Team Name</h4>
+            <h5 class="grey-text right-align">{{name}}</h5>
+        </div> 
+      </div>
 
     <div style="display: inline-block;">
         <div style="width: 30vw;float: left;height: 40.625vw;">
@@ -94,6 +103,7 @@
               <li>You must hit the notes as they cross the line<br><br></li>
               <li>The key mappings are "ASDF", with A being leftmost and F being rightmost and so on<br><br></li>
               <li>Hit Start to Start(Obviously xD). You can pause anytime.<br><br></li>
+              <li>Please make sure you allow audio!<br><br></li>
               <li>Refresh or hit the Restart button to play again!</li>
             </ol>
           </h6>
@@ -114,13 +124,17 @@
         <div style="width: 30vw;float: right;height: 40.625vw;position: absolute;top:32%; right: 0%;">
           <h4 class="center">Leaderboard</h4>
           <hr style="margin-right: 5%;margin-left: 5%;" color="grey">
+          <table style="width: 27vw;margin-left: 5%;">
             {% for i in lb %}
+            <tr>
             {% if forloop.counter0 %}
-            <h6 class="center grey-text">{{i.name.name}} | {{i.score}}</h6>
+            <td class="grey-text"><h6 class="left">{{i.name.name}}</h6></td><td class="grey-text"><h6 class="right">{{i.score}}</h6></td>
             {% else %}
-            <h5 class="center">{{i.name.name}} | {{i.score}}</h5>
+            <td><h5 class="left">{{i.name.name}}</h5></td><td><h5 class="right">{{i.score}}</h5></td>
             {% endif %}
+            </tr>
             {% endfor %}
+          </table>
         </div>
       </div>
 

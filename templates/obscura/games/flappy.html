@@ -19,6 +19,14 @@
     <script src="{% static 'games/flappy_bird/flappy_bird.js'%}"></script>
     <link rel="stylesheet" href="{% static 'games/flappy_bird/flappy_bird.css'%}">
     <!-- https://www.dafont.com/04b-19.font?text=Flappy+Bird -->
+    <style>
+        #titleGame.container
+        {
+          margin: 0 auto;
+          max-width: 100vw;
+          width: 100%;
+        }
+      </style>
 </head>
 
 <body onload="init();">
@@ -39,14 +47,13 @@
         </nav>
     </div>
 
-    <div class="center">
-        <h2>Flappy bird</h2>
-    </div>
-
-    <div style="position: absolute;top:15%;right: 2%;">
-        <h4>Team Name</h4>
-        <h5 class="right grey-text" style="margin-top: -7%;">{{name}}</h5>
-    </div> 
+    <div  id="titleGame" class="row container">
+        <h2 class="center col l4 offset-l4">Flappy Bird</h2>
+        <div class="col l4 ">
+            <h4 class="right-align">Team Name</h4>
+            <h5 class="grey-text right-align">{{name}}</h5>
+        </div> 
+      </div>
 
     <div style="display: inline-block;">
         <div style="width: 34vw;float:left;height: 80vh;">
@@ -67,13 +74,17 @@
         <div style="width: 34vw;float: right;height: 80vh;">
             <h4 class="center">Leaderboard</h4>
             <hr style="margin-right: 5%;margin-left: 5%;" color="grey">
-            {% for i in lb %}
-            {% if forloop.counter0 %}
-            <h6 class="center grey-text">{{i.name.name}} | {{i.score}}</h6>
-            {% else %}
-            <h5 class="center">{{i.name.name}} | {{i.score}}</h5>
-            {% endif %}
-            {% endfor %}
+            <table style="width: 30.6vw;margin-left: 5%;">
+                {% for i in lb %}
+                <tr>
+                {% if forloop.counter0 %}
+                <td class="grey-text"><h6 class="left">{{i.name.name}}</h6></td><td class="grey-text"><h6 class="right">{{i.score}}</h6></td>
+                {% else %}
+                <td><h5 class="left">{{i.name.name}}</h5></td><td><h5 class="right">{{i.score}}</h5></td>
+                {% endif %}
+                </tr>
+                {% endfor %}
+              </table>
         </div>
     </div>
 

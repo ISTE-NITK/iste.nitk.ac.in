@@ -14,6 +14,15 @@
   <link rel="stylesheet" href="{% static 'games/brickbreaker/TemplateData/style.css'%}">
   <script src="{% static 'games/brickbreaker/TemplateData/UnityProgress.js'%}"></script>
   <script src="{% static 'games/brickbreaker/Build/UnityLoader.js'%}"></script>
+  <style>
+    #titleGame.container
+    {
+      margin: 0 auto;
+      max-width: 100vw;
+      width: 100%;
+    }
+  </style>
+
   <script>
     var unityInstance = UnityLoader.instantiate("unityContainer", "{% static 'games/brickbreaker/Build/Bbmain.json'%}", { onProgress: UnityProgress });
   </script>
@@ -79,14 +88,14 @@
 
     </nav>
   </div>
-  <div class="center">
-    <h2>Brickbreaker</h2>
+  <div  id="titleGame" class="row container">
+    <h2 class="center col l4 offset-l4">Brickbreaker</h2>
+    <div class="col l4 ">
+        <h4 class="right-align">Team Name</h4>
+        <h5 class="grey-text right-align">{{name}}</h5>
+    </div> 
   </div>
 
-  <div style="position: absolute;top:15%;right: 2%;">
-    <h4>Team Name</h4>
-    <h5 class="right grey-text" style="margin-top: -7%;">{{name}}</h5>
-</div> 
 
   <div style="display: inline-block;">
     <div style="width: 15vw;float: left;height: 40.625vw;">
@@ -116,15 +125,17 @@
     <div style="width: 15vw;float: right;height: 40.625vw;">
       <h4 class="center">Leaderboard</h4>
       <hr style="margin-right: 5%;margin-left: 5%;" color="grey">
-      <ul style="width: 12vw;margin-left:5%;">
+      <table style="width: 9vw;">
         {% for i in lb %}
+        <tr>
         {% if forloop.counter0 %}
-        <li class="collection-item white-text"><h6>{{i.name.name}}<div class="secondary-content">{{i.score}}</div></h6></li>
+        <td class="grey-text"><h6 class="left">{{i.name.name}}</h6></td><td class="grey-text"><h6 class="right">{{i.score}}</h6></td>
         {% else %}
-        <li class="collection-item white-text"><h5>{{i.name.name}}<div class="secondary-content">{{i.score}}</div></h5></li>
+        <td><h5 class="left">{{i.name.name}}</h5></td><td><h5 class="right">{{i.score}}</h5></td>
         {% endif %}
+        </tr>
         {% endfor %}
-      </ul>
+      </table>
     </div>
   </div>
 
