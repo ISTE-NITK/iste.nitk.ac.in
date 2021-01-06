@@ -336,7 +336,7 @@ def registrationPage(request):
 
 #leaderboard for games
 def lboardGames(id):
-    obj = Game.objects.filter(gameId=id).order_by('-score','name')[:11]
+    obj = Game.objects.filter(gameId=id).order_by('-score','name')[:10]
     return obj
 
 #leaderboard for entire users
