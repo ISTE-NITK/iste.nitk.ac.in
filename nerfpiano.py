@@ -9,7 +9,7 @@ objGame = Game.objects.filter(gameId = '5')
 for i in objGame:
 	initial = i.score
 	userObj = i.name
-	i.score = (i.score+1)//2
+	i.score = (i.score+1)*2
 	if i.score > 250:
 		i.score = 250
 	i.save()
