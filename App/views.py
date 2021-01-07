@@ -297,6 +297,9 @@ def typing(request):
         return render(request, "obscura/games/typing.html", {'lb':obj, 'name':nameSession})
     elif request.method == 'POST':
         scorePost = int(request.POST.get('score').strip())
+        scorePost = scorePost//2
+        if scorePost > 250:
+            scorePost = 250
         #print(scorePost)
         #print(request.POST)
         name = request.session['user']

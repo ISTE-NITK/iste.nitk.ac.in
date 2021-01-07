@@ -5,7 +5,7 @@ django.setup()
 from App.models import Game, User
 from django.core.files.images import ImageFile
 
-objGame = Game.objects.filter(gameId = '3')
+objGame = Game.objects.filter(gameId = '5')
 for i in objGame:
 	initial = i.score
 	userObj = i.name
