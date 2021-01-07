@@ -100,7 +100,7 @@
 
     {% endif %}
     <li><a href="{% url 'leaderboard:index' %}" class="waves-effect white-text">Leaderboard</a></li>
-    <li><a href="/obscura" class="waves-effect white-text">Obscura</a></li>
+    <!-- <li><a href="/obscura" class="waves-effect white-text">Obscura</a></li> -->
     <li class="no-padding">
         <ul class="collapsible collapsible-accordion">
             <li>
@@ -270,11 +270,11 @@
                         </a>
                         {% endif %}
                     </li>
-                    <li>
+                    <!-- <li>
                         <a href="\obscura">
                             Obscura
                         </a>
-                    </li>
+                    </li> -->
                     <li>
                         {% if user.is_authenticated %}
                         <a href="{% url 'project:add' %}">
