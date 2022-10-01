@@ -12,7 +12,7 @@ django-js-asset==1.2.2
 djangorestframework==3.12.2
 idna==3.2
 Markdown==3.3.3
-Pillow==7.1.2
+Pillow==9.0.1
 pytz==2020.4
 # rcssmin==1.0.6
 requests==2.26.0
